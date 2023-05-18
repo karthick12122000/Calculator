@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --theamecolour: tomato;
+}
+
+html {
+
+    font-size: 18px
+}
+
+body {
+    background-color: #BECFFE;
+    text-align: center;
+    color: #6d6d6d;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calculator {
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: #110c2e26 0px 48px 100px 1px;
+
+}
+
+.display {
+    width: inherit;
+}
+
+.display .secondary {
+    width: inherit;
+    height: 100px;
+    color: #6d6d6d;
+    padding: 10px;
+}
+
+.display input[type="text"] {
+    width: inherit;
+    height: 60px;
+    outline: none;
+    border: none;
+    text-align: right;
+    font-size: 2rem;
+    color: #6d6d6d;
+    border-bottom: 1px solid #d5d5d5;
+    padding: 5px;
+}
+
+input:disabled {
+    background: none !important;
+}
+
+.darkin {
+    background: #060B27;
+    color: #ffffff !important;
+    border-bottom: 1px solid #565656 !important;
+}
+
+.btncontainer {
+    width: inherit;
+    height: 340px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.btn:active {
+    box-shadow: #ccdbe8 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset;
+}
+
+.darkbtn {
+    background: rgb(144 144 144 / 26%);
+
+    color: #FFFFFF;
+}
+
+.darkbtn:active {
+    /* box-shadow: #ccdbe8 3px 3px 6px 0px inset, #ffffff80 -3px -3px 6px 1px inset; */
+    box-shadow: none !important;
+}
+
+.btn--opr {
+    color: var(--theamecolour) !important;
+}
+
+.equal {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: var(--theamecolour);
+    color: #ffffff !important;
+}
+
+.equal:active {
+    box-shadow: #7a1101 3px 3px 6px 0px inset, #ff2200 -3px -3px 6px 1px inset;
+}
+
+.secondary {
+    overflow: scroll;
+    text-align: left;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: right;
+    opacity: 0.8;
+
+}
+
+.secondary::-webkit-scrollbar {
+    display: none;
+
+}
+
+.btn--mode {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--theamecolour);
+    background: #ffffff;
+    border: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.dark {
+    background: #060B27;
+    color: #FFFFFF !important;
+}

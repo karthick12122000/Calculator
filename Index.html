@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- ////////////----------ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator">
+        <div class="display">
+            <div class="secondary">
+
+            </div>
+            <input class="inputElem" id="inputElem" placeholder="0" type="text" disabled>
+        </div>
+        <div class="btncontainer">
+            <span class="btn btn--opr" onclick="clearV()">C</span>
+            <span class="btn btn--opr" onclick="backspace()">
+                <ion-icon name="backspace-outline"></ion-icon>
+            </span>
+            <span class="btn btn--opr" onclick="append('%')">%</span>
+            <span class="btn btn--opr" onclick="append('/')">/</span>
+            <span class="btn" onclick="append(1)">1</span>
+            <span class="btn" onclick="append(2)">2</span>
+            <span class="btn" onclick="append(3)">3</span>
+            <span class="btn btn--opr" onclick="append('*')">x</span>
+            <span class="btn" onclick="append(4)">4</span>
+            <span class="btn" onclick="append(5)">5</span>
+            <span class="btn" onclick="append(6)">6</span>
+            <span class="btn btn--opr" onclick="append('-')">-</span>
+            <span class="btn" onclick="append(7)">7</span>
+            <span class="btn" onclick="append(8)">8</span>
+            <span class="btn" onclick="append(9)">9</span>
+            <span class="btn btn--opr" onclick="append('+')">+</span>
+            <span class="btn" onclick="append(0)">0</span>
+            <span class="btn" onclick="append('.')">.</span>
+            <span class="btn btn--opr equal" id="equal" onclick="equals()">=</span>
+        </div>
+    </div>
+    <span class="btn btn--mode" onclick="modefun()"><ion-icon name="moon-outline"></ion-icon></span>
+</body>
+<script src="index.js"></script>
+
+</html>
